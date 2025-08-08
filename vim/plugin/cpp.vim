@@ -21,7 +21,7 @@ function! CompileRunCPP()
   let l:filename = expand('%:r')
 
   " 构建编译运行命令
-  let l:cmd = 'echo "\033[32m编译中...\033[0m" && ' .
+  let l:cmd = 'clear && echo "\033[32m编译中...\033[0m" && ' .
             \ 'g++ -std=c++11 -Wall -O2 ' . shellescape(expand('%')) .
             \ ' -o ' . shellescape(l:filename) . ' && ' .
             \ 'echo "\n\033[31m运行中...\033[0m" && ' .
