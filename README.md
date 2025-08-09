@@ -30,7 +30,8 @@
 
 1. 克隆项目到本地
 ```bash
-git clone <repository-url> ~/.config/fish/
+git clone https://github.com/air459/my-meihua.git /etc
+sh /etc/my-meihua/install.sh
 ```
 
 2. 重启 Fish Shell 或重新加载配置
@@ -43,10 +44,23 @@ source ~/.config/fish/config.fish
 ```
 my-meihua/
 ├── README.md           # 项目说明文档
-├── config.fish         # 主配置文件
-├── functions/          # 自定义函数目录
-├── themes/            # 主题配置目录
-└── plugins/           # 插件配置目录
+├── install.sh          # 安装脚本
+├── deploy.txt          # 部署配置文件
+├── .gitignore          # Git 忽略文件配置
+├── fish/               # Fish Shell 配置目录
+│   ├── config.fish     # Fish 主配置文件
+│   ├── fish_variables  # Fish 变量配置
+│   ├── fish_plugins    # Fish 插件列表
+│   ├── functions/      # 自定义函数目录
+│   ├── completions/    # 命令补全配置
+│   ├── conf.d/         # 配置片段目录
+│   └── themes/         # Fish 主题配置
+├── starship/           # Starship 提示符配置
+│   ├── starship.toml   # Starship 配置文件
+│   └── log/            # 日志目录
+└── vim/                # Vim 编辑器配置
+    ├── vimrc           # Vim 配置文件
+    └── plugin/         # Vim 插件目录
 ```
 
 ## ⚙️ 配置说明

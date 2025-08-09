@@ -1,6 +1,23 @@
 syntax on
 set t_Co=256
 
+" 长行换行显示设置
+set wrap                    " 启用自动换行显示
+set linebreak              " 在合适的地方断行（如空格处）
+set nolist                 " 禁用list模式，避免影响linebreak
+
+" 让j/k在换行的长行中按显示行移动，而不是按实际行移动
+nnoremap j gj
+nnoremap k gk
+nnoremap <Down> gj
+nnoremap <Up> gk
+inoremap <Down> <C-o>gj
+inoremap <Up> <C-o>gk
+
+" 让0和$也按显示行工作
+nnoremap 0 g0
+nnoremap $ g$
+
 nnoremap <F8> :wq<CR>
 inoremap <F8> <Esc>:wq<CR>
 
