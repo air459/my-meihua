@@ -45,7 +45,7 @@ source ~/.config/fish/config.fish
 my-meihua/
 ├── README.md           # 项目说明文档
 ├── install.sh          # 安装脚本
-├── deploy.txt          # 部署配置文件
+├── deploy.txt          # 提交日志
 ├── .gitignore          # Git 忽略文件配置
 ├── fish/               # Fish Shell 配置目录
 │   ├── config.fish     # Fish 主配置文件
