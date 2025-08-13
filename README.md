@@ -30,8 +30,8 @@
 
 1. 克隆项目到本地
 ```bash
-git clone https://github.com/air459/my-meihua.git /etc
-sh /etc/my-meihua/install.sh
+bash <(curl -s https://raw.githubusercontent.com/air459/my-meihua/main/install.sh)
+sh install.sh
 ```
 
 2. 重启 Fish Shell 或重新加载配置
