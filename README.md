@@ -28,10 +28,10 @@
 
 ### 安装步骤
 
-1. 克隆项目到本地
+1. 运行
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/air459/my-meihua/main/install.sh)
-sh install.sh
+sudo apt install fish lsd fzf vim curl git -y
+curl -s https://raw.githubusercontent.com/air459/my-meihua/main/install.sh | bash
 ```
 
 2. 重启 Fish Shell 或重新加载配置
@@ -66,10 +66,7 @@ my-meihua/
 ## ⚙️ 配置说明
 
 ### 主题配置
-在 `themes/` 目录下可以找到各种颜色主题配置文件。
-
-### 自定义函数
-`functions/` 目录包含了各种实用的自定义函数，提升日常使用效率。
+在 `starship/` 目录下可以找到shell提示符主题配置文件。
 
 ## 🎨 自定义
 
