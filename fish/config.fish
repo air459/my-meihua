@@ -57,3 +57,4 @@ set -gx STARSHIP_CONFIG /opt/my-meihua/starship/starship.toml
 
 eval (ssh-agent -c) >> /dev/null 2>&1 &
 alias cnpm="npm --registry=https://registry.npmmirror.com  --cache=$HOME/.npm/.cache/cnpm  --disturl=https://npmmirror.com/mirrors/node  --userconfig=$HOME/.cnpmrc"
+
